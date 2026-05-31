@@ -18,7 +18,7 @@ int getRussianLetterIndex(unsigned char b1, unsigned char b2)
     if (b1 == 0xD0 && b2 >= 0xB0 && b2 <= 0xBF)
     {
         int idx = b2 - 0xB0;      // 0..15
-        if (idx >= 5) idx++;      // после 'е' (5) вставляем 'ё' (6)
+        if (idx >= 6) idx++;      // после 'е' (5) вставляем 'ё' (6)
         return idx;               // 'а'=0, 'б'=1, ..., 'е'=5, 'ё'=6, 'ж'=7, ..., 'п'=16
     }
     // р-я: 0xD1 0x80..0x8F
