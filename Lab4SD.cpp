@@ -114,7 +114,7 @@ int main()
 
     while (true)
     {
-        std::cout << "\nInput word (exit): ";
+        std::cout << "\nВведите слово в нижнем регистре (для выхода - exit): ";
 
         std::string source;
 
@@ -142,9 +142,7 @@ int main()
             }
         }
 
-        std::cout << "\nFound: "
-                  << found
-                  << '\n';
+        std::cout << "\nНайдено: " << found << '\n';
     }
 
     return 0;
