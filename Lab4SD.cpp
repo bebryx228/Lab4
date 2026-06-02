@@ -78,7 +78,7 @@ int main()
 
     if (!fin)
     {
-        std::cout << "Cannot open nouns.txt\n";
+        std::cout << "Не удолось открыть.txt\n";
         return 1;
     }
 
@@ -108,9 +108,7 @@ int main()
             return a.word < b.word;
         });
 
-    std::cout << "Dictionary loaded: "
-              << dictionary.size()
-              << " words\n";
+    std::cout << "Словарь загружен: "<< dictionary.size() << " words\n";
 
     while (true)
     {
